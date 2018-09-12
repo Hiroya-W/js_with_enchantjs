@@ -129,25 +129,33 @@ window.onload = function() {
 		//ステータスウィンドウを作成
 		var sw1 = new StatusWindow( scene, 0, 366 );
 		sw1.setName( "アプフェル" );	// 名前を設定.
+		sw1.setHPMax( 9999 );
 		sw1.setHP( 9999 );	// HPを設定.
+		sw1.setSPMax( 999 );
 		sw1.setSP( 999 );	// SPを設定.
 		sw1.setLV( 99 );	// レベルを設定.
 
 		var sw2 = new StatusWindow( scene, 120, 366 );
 		sw2.setName( "レザン" );	// 名前を設定.
+		sw2.setHPMax( 5000 );
 		sw2.setHP( 1244 );	// HPを設定.
+		sw2.setSPMax( 2000 );
 		sw2.setSP( 678 );	// SPを設定.
 		sw2.setLV( 71 );	// レベルを設定.
 
 		var sw3 = new StatusWindow( scene, 240, 366 );
 		sw3.setName( "ビスキュイ" );	// 名前を設定.
+		sw3.setHPMax( 2000 );
 		sw3.setHP( 21 );	// HPを設定.
-		sw3.setSP( 9990 );	// SPを設定.
+		sw3.setSPMax( 4000 )
+		sw3.setSP( 2390 );	// SPを設定.
 		sw3.setLV( 34 );	// レベルを設定.
 
 		var sw4 = new StatusWindow( scene, 360, 366 );
 		sw4.setName( "ダマンド" );	// 名前を設定.
+		sw4.setHPMax( 5000 );
 		sw4.setHP( 337 );	// HPを設定.
+		sw4.setSPMax( 0 );
 		sw4.setSP( 0 );	// SPを設定.
 		sw4.setLV( 25 );	// レベルを設定.
 
@@ -276,7 +284,7 @@ window.onload = function() {
 				value = 1;
 			}
 			hpMax = value;
-			this,setHPGauge();
+			this.setHPGauge();
 		},
 		setHPGauge: function(){
 			var hiddenGaugeX = 108 - (96- ((hp*96)/hpMax));
