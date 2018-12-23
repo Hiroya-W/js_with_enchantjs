@@ -1,2 +1,4 @@
 # js_with_enchantjs
-enchant.js test
+enchant.jsを使った2D RPGゲームを作ってみたい
+
+
